@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Gill Sans", sans-serif;
+    color: rgb(216, 249, 252);
+    background-color: rgb(22, 22, 22);
+
+}
+
+h1{
+    text-align: center;
+    color: rgb(252, 128, 46);
+}
+
+div{
+    
+    width: 100%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+p{
+    margin: 0;
+    padding: 10px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    border: 2px solid rgb(252, 128, 46);
+    background-color: rgba(49, 49, 49, 0.555);
+}
+
+
+section{
+    clear: left;
+    width: 130px;
+    text-align: center;
+    border: 2px solid rgb(252, 128, 46) ;
+    padding: 0 10px;
+    position: absolute;
+    top: 10;
+    right: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.divClass1 section{ 
+    background-color: orange;
+}
+
+.divClass2 section{
+    background-color: brown;
+}
+
+.divClass3 section{
+    background-color: palevioletred;
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .divClass1{
+        float: left;
+        width: 50%;
+    }
+
+    .divClass2{
+        float: left;
+        width: 50%;
+    }
+
+    .divClass3{
+        float: left;
+    }
+}
+
+
+@media(min-width:992px){
+    .divClass1{
+        float: left;
+        width: 33%;
+    }
+
+    .divClass2{
+        float: left;
+        width: 33%;
+    }
+
+    .divClass3{
+        float: left;
+        width: 33%;
+    }
+}
