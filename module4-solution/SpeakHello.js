@@ -32,6 +32,6 @@
 		console.log(speakWord  + " " + name);
 	}
 
-	windoe.helloSpeaker=helloSpeaker;
+	window.helloSpeaker = helloSpeaker;
 
 })(window);
