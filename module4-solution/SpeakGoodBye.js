@@ -27,11 +27,10 @@
 // xxxx.xxxx = byeSpeaker;
 (function (window){
 	var byeSpeaker = {};
-	byeSpeaker.speakWord = "Hello";
+	var speakWord = "Good Bye";
 	helloSpeaker.speak = function(name) {
-		console.log(byeSpeaker.speakWord  + " " + name);
+		console.log(speakWord  + " " + name);
 	}
 
-	windoe.byeSpeaker=byeSpeaker;
 
 })(window);
