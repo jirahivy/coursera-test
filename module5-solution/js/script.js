@@ -110,7 +110,7 @@ function buildAndShowHomeHTML (categories) {
         categoryHtml,
         function (categoryHtml) {
           var chosenCategoryShortName = (categories,
-                                        categoriesTitleHtml,
+                                        homeHtml,
                                         categoryHtml);
           insertHtml("#main-content",categoriesViewHtml);
         },
