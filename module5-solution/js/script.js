@@ -84,7 +84,7 @@ showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
   function (request){
-    buildAndShowHomeHTML(request)
+    buildAndShowHomeHTML(request);
   }, // ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitly setting the flag to get JSON from server processed into an object literal
 });
@@ -122,7 +122,7 @@ function buildAndShowHomeHTML (categories) {
       //
       // var homeHtmlToInsertIntoMainPage = ....
 
-      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml,"randomCategoryShortName", "'"+chosenCategoryShortName+"'");
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml,"randomCategoryShortName", chosenCategoryShortName);
 
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
@@ -130,7 +130,7 @@ function buildAndShowHomeHTML (categories) {
       // of how to do that.
       // ....
 
-      insertHtml("#main-content", homeHtmlToInsertIntoMainPage)
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
 
 // var insertHtml = function (selector, html) {
 //   var targetElem = document.querySelector(selector);
